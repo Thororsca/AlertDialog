@@ -1,0 +1,25 @@
+public void abrirToast(View view){
+
+        ImageView imagem = new ImageView(getApplicationContext());
+        imagem.setImageResource(android.R.drawable.star_big_off);
+
+        TextView texteView = new TextView(getApplicationContext());
+        texteView.setText("Ação realizada com sucesso!");
+
+        Toast toast = new Toast(this);
+        toast.setDuration(Toast.LENGTH_SHORT);
+        //toast.setView(imagem);
+        toast.setView(texteView);
+        toast.show();
+
+        /*
+
+        Modo façil
+
+    Toast.makeText(
+            getApplicationContext(),
+            "Ação realizada com sucesso!",
+            Toast.LENGTH_SHORT
+    ).show();
+
+         */
